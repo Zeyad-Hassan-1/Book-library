@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="main.js" defer></script>
+
+<body>
+    <header>
+        <h1 class="title">Book library</h1>
+    </header>
+    <div class="main-buttons">
+        <button class="clear-all add-to-library">Clear all</button>
+        <button class="add-to-library adding-cards">Add to your library</button>
+    </div>
+    <dialog class="modal">
+        <form id="bookForm" method="dialog">
+            <div class="form-group">
+                <label for="bookName">Name of the Book:</label>
+                <input type="text" id="bookName" name="bookName" required>
+            </div>
+            <div class="form-group">
+                <label for="authorName">Author Name:</label>
+                <input type="text" id="authorName" name="authorName" required>
+            </div>
+            <div class="form-group">
+                <label for="numPages">Number of Pages:</label>
+                <input type="number" id="numPages" name="numPages" required>
+            </div>
+            <div class="form-group checkbox-form">
+                <input type="checkbox" id="isRead" name="isRead" class="checkboxx">
+                <label for="isRead">Is Read?</label>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+
+    </dialog>
+
+</body>
+
+</html>
+
